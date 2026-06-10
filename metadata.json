@@ -1,0 +1,6 @@
+{
+  "name": "Vasuki Clothing",
+  "description": "Where Style Meets Elegance - Premium modern fashion and clothing brand website showcasing collections, custom services, designer portfolio, custom order requests, and customer experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

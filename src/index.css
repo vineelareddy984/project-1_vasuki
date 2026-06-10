@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F7E7B4;
+  --color-gold-dark: #B38F1E;
+}
+
+/* Global scroll behavior and smooth transitions */
+html {
+  scroll-behavior: smooth;
+}
+
+input, textarea, select {
+  font-family: var(--font-sans);
+}
+
+/* Luxury card and glassmorphism styling classes */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-effect-light {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Image zoom transition */
+.zoom-container {
+  overflow: hidden;
+}
+.zoom-image {
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.zoom-container:hover .zoom-image {
+  transform: scale(1.08);
+}
